@@ -9,13 +9,13 @@ public class Fabula extends Escrito {
     public Fabula(String origen, String titulo, String autor, int paginas, String ensenanza, String interpretacion) {
         super(origen, titulo, autor, paginas);
         this.ensenanza = ensenanza;
-        this.interpretacion = this.toString();
+        this.interpretacion = interpretacion;
     }
 
 
     //Getters y Setters
     public String getEnsenanza() {
-		return this.ensenanza;
+		return ensenanza;
 	}
 
 	public void setEnsenanza(String ensenanza) {
@@ -23,7 +23,7 @@ public class Fabula extends Escrito {
 	}
 
     public String getInterpretacion() {
-		return this.interpretacion;
+		return interpretacion;
 	}
 
 	public void setInterpretacion(String interpretacion) {
@@ -33,15 +33,14 @@ public class Fabula extends Escrito {
 
     //Metodos
     public int palabrasTotales(int palabrasPagina) {
-        return this.getPaginas() * palabrasPagina * 1;
+        return getPaginas() * palabrasPagina * 1;
     }
 
     public String interpretacion() {
-        return this.interpretacion;
+        return interpretacion;
     }
 
 	public String toString() {
-        return (this.getOrigen() + "\n" + this.getTitulo() + "\n" + 
-        this.getAutor() + "\n" + this.getPaginas() + "\n" + this.getEnsenanza());
+        return getOrigen() + "\n" + getTitulo() + "\n" + getAutor() + "\n" + getPaginas() + "\n" + getEnsenanza();
     }
 }

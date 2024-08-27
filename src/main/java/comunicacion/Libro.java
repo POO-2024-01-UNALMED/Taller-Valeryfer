@@ -18,7 +18,7 @@ public class Libro extends Escrito {
 
     //Getters y Setters
     public String getCo_autor() {
-		return this.co_autor;
+		return co_autor;
 	}
 
 	public void setCo_autor(String co_autor) {
@@ -26,7 +26,7 @@ public class Libro extends Escrito {
 	}
 
     public String getEditorial() {
-		return this.editorial;
+		return editorial;
 	}
 
 	public void setEditorial(String editorial) {
@@ -34,7 +34,7 @@ public class Libro extends Escrito {
 	}
 
     public String getEdicion() {
-		return this.edicion;
+		return edicion;
 	}
 
 	public void setEdicion(String edicion) {
@@ -42,7 +42,7 @@ public class Libro extends Escrito {
 	}
 
     public String getInterpretacion() {
-		return this.interpretacion;
+		return interpretacion;
 	}
 
 	public void setInterpretacion(String interpretacion) {
@@ -56,12 +56,11 @@ public class Libro extends Escrito {
     }
 
     public String interpretacion() { 
-        return this.interpretacion;
+        return interpretacion;
     }
 
 	public String toString() {
-        return (this.getOrigen() + "\n" + this.getTitulo() + "\n" + 
-        this.getAutor() + "\n" + this.getPaginas() + "\n" + this.getCo_autor() + "\n" 
-        + this.getEditorial() + "\n" + this.getEdicion());
+        return getOrigen() + "\n" + getTitulo() + "\n" + getAutor() + "\n" + getPaginas() + "\n" + getCo_autor() + "\n" 
+        + getEditorial() + "\n" + getEdicion();
     }
 }

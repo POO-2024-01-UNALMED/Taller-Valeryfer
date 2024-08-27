@@ -11,48 +11,48 @@ public class Periodico extends Escrito {
         super(origen, titulo, autor, paginas);
         this.fecha = fecha;
         this.primicia = primicia;
-        this.interpretacion = this.toString();
+        this.interpretacion = interpretacion;
     }
 
 
     //Getters y Setters
     public String getFecha() {
-		return this.fecha;
-	}
+		  return fecha;
+	  }
 
-	public void setFecha(String fecha) {
-		this.fecha = fecha;
+	  public void setFecha(String fecha) {
+		  this.fecha = fecha;
     }
 
     public String getPrimicia() {
-		return this.primicia;
-	}
+		  return primicia;
+	  }
 
-	public void setPrimicia(String primicia) {
-		this.primicia = primicia;
+	  public void setPrimicia(String primicia) {
+		  this.primicia = primicia;
     }
 
     public String getInterpretacion() {
-		return this.interpretacion;
-	}
+		  return interpretacion;
+	  }
 
-	public void setInterpretacion(String interpretacion) {
-		this.interpretacion = interpretacion;
+	  public void setInterpretacion(String interpretacion) {
+		  this.interpretacion = interpretacion;
     }
 
 
     //Metodos
     public int palabrasTotales(int palabrasPagina) {
-        return this.getPaginas() * palabrasPagina * 10;
+        return getPaginas() * palabrasPagina * 10;
     }
 
     public String interpretacion() {
-        return this.interpretacion;
+        return interpretacion;
     }
 
     //Rectificar
 	public String toString() {
-        return (this.getOrigen() + "\n" + this.getTitulo() + "\n" + 
-        this.getAutor() + "\n" + this.getPaginas() + "\n" + this.getFecha() + "\n" + this.getPrimicia());
+        return getOrigen() + "\n" + getTitulo() + "\n" + getAutor() + "\n" + 
+        getPaginas() + "\n" + getFecha() + "\n" + getPrimicia();
     }
 }
