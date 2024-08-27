@@ -13,7 +13,7 @@ public class Libro extends Escrito {
         this.co_autor = co_autor;
         this.editorial = editorial;
         this.edicion = edicion;
-        this.interpretacion = this.toString();
+        this.interpretacion = interpretacion;
     }
 
     //Getters y Setters
